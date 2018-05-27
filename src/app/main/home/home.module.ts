@@ -1,14 +1,14 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { HomeComponent } from './home.component';
-import { RouterModule, Routes } from '@angular/router';
+import { Routes, RouterModule } from '@angular/router';
 
-export const homeRoutes: Routes = [
+const homeRoutes: Routes = [
+   //localhost:4200/main/user
   { path: '', redirectTo: 'index', pathMatch: 'full' },
-  { path: 'index', component: HomeComponent },
-  
+   //localhost:4200/main/home/index
+  { path: 'index', component: HomeComponent }
 ]
-
 @NgModule({
   imports: [
     CommonModule,

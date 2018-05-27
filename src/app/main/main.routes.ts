@@ -13,4 +13,5 @@ export const mainRoutes: Routes = [
             { path: 'user', loadChildren: './user/user.module#UserModule' }
         ]
     }
+
 ]

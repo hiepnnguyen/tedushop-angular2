@@ -1,18 +1,15 @@
-import { NgModule, Component } from '@angular/core';
+import { NgModule } from '@angular/core';
+import { Routes,RouterModule } from '@angular/router';
 import { CommonModule } from '@angular/common';
 import { LoginComponent } from './login.component';
-import { Routes, RouterModule } from '@angular/router';
-
 export const routes: Routes = [
-  //localhost:4200/login/
-  // gọi đến LoginConponent và nhét vào Router-outlet trong app.component.html
-  { path: '', component: LoginComponent } 
+   //localhost:4200/login
+  { path: '', component: LoginComponent }
 ];
 @NgModule({
   imports: [
     CommonModule,
     RouterModule.forChild(routes)
-
   ],
   declarations: [LoginComponent]
 })
